@@ -14,7 +14,7 @@
   - 외국인에게 인기있는 한식 메뉴
   - 한국인이 좋아하는 한식 메뉴
 
-- training terminal에 한식 데이터셋을 import할 수 있는 링크 포함되어 있음.
+- training terminal에 해당 데이터셋을 import할 수 있는 링크 포함
 ### 학습 방법
 - COCO 2017 Dataset으로 pre-trained된 SSD MobileNect v2 모델로 전이 학습 수행
 
