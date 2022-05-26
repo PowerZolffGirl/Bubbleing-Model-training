@@ -6,14 +6,15 @@
 - Google Colab
 - Tensorflow 2
 ### 학습 데이터
-(1) 직접 제작한 한국 음식 데이터셋
+- 직접 제작한 한국 음식 데이터셋 이용
+  - 58종 클래스에 대해 총 21,895개 이미지로 구성
 
--> 58종 클래스에 대해 총 21,895개 이미지로 구성
+- 한국의 대중적인 식문화를 반영해 아래의 기준으로 음식 선정
+  - 한식진흥원 포털의 한국 음식 아카이브 
+  - 외국인에게 인기있는 한식 메뉴
+  - 한국인이 좋아하는 한식 메뉴
 
-(2) 한국의 대중적인 식문화를 반영해 아래의 기준으로 음식 선정
-- 한식진흥원 포털의 한국 음식 아카이브 
-- 외국인에게 인기있는 한식 메뉴
-- 한국인이 좋아하는 한식 메뉴
+- training terminal에 한식 데이터셋을 import할 수 있는 링크 포함되어 있음.
 ### 학습 방법
 - COCO 2017 Dataset으로 pre-trained된 SSD MobileNect v2 모델로 전이 학습 수행
 
@@ -23,4 +24,6 @@
 ### 학습 결과
 <img src="https://user-images.githubusercontent.com/76741915/170534952-d93d72ca-5c1d-4ed3-bac9-e1fb47ff52ae.png" width="300" height="250"/>
 
-- 실제 서비스에 적용한 모델은 Bubbleing-Tensorflow.js-Model 레포지토리에 위치함.
+- eval loss가 가장 낮은 epoch의 모델을 선택하여 Tensorflow.js로 convert함.
+
+- 실제 서비스에 적용한 tfjs 모델은 Bubbleing-Tensorflow.js-Model 레포지토리에 위치함.
